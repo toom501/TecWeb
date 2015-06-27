@@ -1,0 +1,418 @@
+[
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "November/December 2014\nVolume 20, Number 11/12Table of Contents\n",
+                    "predicate": "webscraping:hasPublicationYear",
+                    "subject": "Towards_a_Marketplace_for_the_Scientific_Community:_Accessing_Knowledge_from_the_Computer_Science_Domain"
+                },
+                "label": "",
+                "type": "hasPublicationYear"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "p-0",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:24:05.407610"
+        },
+        "target": {
+            "end": 64,
+            "id": "bo",
+            "source": "November/December 2014\nVolume 20, Number 11/12Table of Contents\n",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "\nMark Kr\u00f6ll, Stefan Klampfl and Roman Kern \nKnow-Center GmbH, Graz, Austria\n{mkroell, sklampfl, rkern}@know-center.at\n\n\ndoi:10.1045/november14-kroell\n ",
+                    "predicate": "dcterms:creator",
+                    "subject": "Towards_a_Marketplace_for_the_Scientific_Community:_Accessing_Knowledge_from_the_Computer_Science_Domain"
+                },
+                "label": "",
+                "type": "hasAuthor"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "p-1",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:24:05.407610"
+        },
+        "target": {
+            "end": 152,
+            "id": "bo",
+            "source": "\nMark Kr\u00f6ll, Stefan Klampfl and Roman Kern \nKnow-Center GmbH, Graz, Austria\n{mkroell, sklampfl, rkern}@know-center.at\n\n\ndoi:10.1045/november14-kroell\n ",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "Towards a Marketplace for the Scientific Community: Accessing Knowledge from the Computer Science Domain",
+                    "predicate": "dcterms:title",
+                    "subject": "Towards_a_Marketplace_for_the_Scientific_Community:_Accessing_Knowledge_from_the_Computer_Science_Domain"
+                },
+                "label": "",
+                "type": "hasTitle"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-4",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:24:05.407610"
+        },
+        "target": {
+            "end": 104,
+            "id": "bo",
+            "source": "Towards a Marketplace for the Scientific Community: Accessing Knowledge from the Computer Science Domain",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "Keywords: Scientific Stakeholders, Marketplace, Computer Science Domain, Scientific Publications, Knowledge Acquisition",
+                    "predicate": "sem:denotes",
+                    "subject": "Towards_a_Marketplace_for_the_Scientific_Community:_Accessing_Knowledge_from_the_Computer_Science_Domain"
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "p-4",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:24:05.407610"
+        },
+        "target": {
+            "end": 119,
+            "id": "bo",
+            "source": "Keywords: Scientific Stakeholders, Marketplace, Computer Science Domain, Scientific Publications, Knowledge Acquisition",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-5",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:24:05.407610"
+        },
+        "target": {
+            "end": 8,
+            "id": "bo",
+            "source": "Abstract",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-6",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:24:05.407610"
+        },
+        "target": {
+            "end": 15,
+            "id": "bo",
+            "source": "1. Introduction",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-7",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:24:05.407610"
+        },
+        "target": {
+            "end": 57,
+            "id": "bo",
+            "source": "2. Ontological Description of the Computer Science Domain",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-8",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:24:05.407610"
+        },
+        "target": {
+            "end": 11,
+            "id": "bo",
+            "source": "3. Data Set",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-9",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:24:05.407610"
+        },
+        "target": {
+            "end": 21,
+            "id": "bo",
+            "source": "4. Automated Approach",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-10",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:24:05.407610"
+        },
+        "target": {
+            "end": 13,
+            "id": "bo",
+            "source": "5. Conclusion",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-11",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:24:05.407610"
+        },
+        "target": {
+            "end": 16,
+            "id": "bo",
+            "source": "Acknowledgements",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-12",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:24:05.407610"
+        },
+        "target": {
+            "end": 10,
+            "id": "bo",
+            "source": "References",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-13",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:24:05.407610"
+        },
+        "target": {
+            "end": 17,
+            "id": "bo",
+            "source": "About the Authors",
+            "start": 0
+        }
+    }
+]

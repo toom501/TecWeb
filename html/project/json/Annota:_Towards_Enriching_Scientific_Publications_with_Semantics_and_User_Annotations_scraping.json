@@ -1,0 +1,386 @@
+[
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "November/December 2014\nVolume 20, Number 11/12Table of Contents\n",
+                    "predicate": "webscraping:hasPublicationYear",
+                    "subject": "Annota:_Towards_Enriching_Scientific_Publications_with_Semantics_and_User_Annotations"
+                },
+                "label": "",
+                "type": "hasPublicationYear"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "p-0",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:19:57.314087"
+        },
+        "target": {
+            "end": 64,
+            "id": "bo",
+            "source": "November/December 2014\nVolume 20, Number 11/12Table of Contents\n",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "\nMichal Holub, Robert Moro, Jakub Sevcech, Martin Liptak and Maria Bielikova \nSlovak University of Technology in Bratislava, Slovakia\n{michal.holub, robert.moro, jakub.sevcech, maria.bielikova}@stuba.sk and mliptak@gmail.com\n\ndoi:10.1045/november14-holub\n ",
+                    "predicate": "dcterms:creator",
+                    "subject": "Annota:_Towards_Enriching_Scientific_Publications_with_Semantics_and_User_Annotations"
+                },
+                "label": "",
+                "type": "hasAuthor"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "p-1",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:19:57.314087"
+        },
+        "target": {
+            "end": 256,
+            "id": "bo",
+            "source": "\nMichal Holub, Robert Moro, Jakub Sevcech, Martin Liptak and Maria Bielikova \nSlovak University of Technology in Bratislava, Slovakia\n{michal.holub, robert.moro, jakub.sevcech, maria.bielikova}@stuba.sk and mliptak@gmail.com\n\ndoi:10.1045/november14-holub\n ",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "Annota: Towards Enriching Scientific Publications with Semantics and User Annotations",
+                    "predicate": "dcterms:title",
+                    "subject": "Annota:_Towards_Enriching_Scientific_Publications_with_Semantics_and_User_Annotations"
+                },
+                "label": "",
+                "type": "hasTitle"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-4",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:19:57.314087"
+        },
+        "target": {
+            "end": 85,
+            "id": "bo",
+            "source": "Annota: Towards Enriching Scientific Publications with Semantics and User Annotations",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "Keywords: Digital Library, User Model, Domain Model, Scientific Publication, Annotation, Search, Navigation, Semantics, Annota",
+                    "predicate": "sem:denotes",
+                    "subject": "Annota:_Towards_Enriching_Scientific_Publications_with_Semantics_and_User_Annotations"
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "p-4",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:19:57.314087"
+        },
+        "target": {
+            "end": 126,
+            "id": "bo",
+            "source": "Keywords: Digital Library, User Model, Domain Model, Scientific Publication, Annotation, Search, Navigation, Semantics, Annota",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-5",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:19:57.314087"
+        },
+        "target": {
+            "end": 8,
+            "id": "bo",
+            "source": "Abstract",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-6",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:19:57.314087"
+        },
+        "target": {
+            "end": 13,
+            "id": "bo",
+            "source": "1. Motivation",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-7",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:19:57.314087"
+        },
+        "target": {
+            "end": 40,
+            "id": "bo",
+            "source": "2. Annota \u2014 Bookmarking and Annotation",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-8",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:19:57.314087"
+        },
+        "target": {
+            "end": 33,
+            "id": "bo",
+            "source": "3. Annota \u2014 Evaluation Platform",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-9",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:19:57.314087"
+        },
+        "target": {
+            "end": 13,
+            "id": "bo",
+            "source": "4. Conclusion",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-10",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:19:57.314087"
+        },
+        "target": {
+            "end": 16,
+            "id": "bo",
+            "source": "Acknowledgements",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-11",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:19:57.314087"
+        },
+        "target": {
+            "end": 10,
+            "id": "bo",
+            "source": "References",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-12",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:19:57.314087"
+        },
+        "target": {
+            "end": 17,
+            "id": "bo",
+            "source": "About the Authors",
+            "start": 0
+        }
+    }
+]

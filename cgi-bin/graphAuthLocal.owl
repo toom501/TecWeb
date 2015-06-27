@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdfs='http://www.w3.org/2000/01/rdf-schema#'
+  xmlns:_7='http://purl.org/vocab/frbr/core#'
+  xmlns:_6='http://xmlns.com/foaf/0.1/'
+  xmlns:_5='http://schema.org/'
+  xmlns:_4='http://purl.org/spar/fabio/'
+  xmlns:_3='http://www.w3.org/ns/oa#'
+  xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+>
+  <_3:Annotation>
+    <_3:annotatedBy>
+      <rdf:Description rdf:about="mailto:mailcreatore@unibo.it">
+        <_6:name>nome creatore</_6:name>
+        <_5:mail>mailcreatore@unibo.it</_5:mail>
+      </rdf:Description>
+    </_3:annotatedBy>
+    <_3:hasBody>
+      <rdf:Statement>
+        <rdf:object rdf:resource="http://vitali.web.cs.unibo.it/raschietto/person/idauth"/>
+        <rdfs:label>un autore del documento e' nome autore</rdfs:label>
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/articolo"/>
+        <rdf:predicate rdf:resource="http://purl.org/dc/terms/creator"/>
+      </rdf:Statement>
+    </_3:hasBody>
+    <_3:hasTarget>
+      <_3:SpecificResource>
+        <_3:hasSource rdf:resource="http://www.dlib.org/dlib/november14/articolo.html"/>
+        <_3:hasSelector rdf:nodeID="okThMvhg5"/>
+      </_3:SpecificResource>
+    </_3:hasTarget>
+    <_3:annotatedAt>2015-06-18 17:43:03.083509</_3:annotatedAt>
+    <rdfs:label>Autore</rdfs:label>
+  </_3:Annotation>
+  <_4:Work rdf:about="http://www.dlib.org/dlib/november14/articolo">
+    <_4:hasPortrayal>
+      <_4:Item rdf:about="http://www.dlib.org/dlib/november14/articolo.html"/>
+    </_4:hasPortrayal>
+    <_7:realization>
+      <_4:Expression rdf:about="http://www.dlib.org/dlib/november14/articolo_ver1">
+        <_4:hasRepresentation rdf:resource="http://www.dlib.org/dlib/november14/articolo.html"/>
+      </_4:Expression>
+    </_7:realization>
+  </_4:Work>
+  <_3:FragmentSelector rdf:nodeID="okThMvhg5">
+    <_3:start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</_3:start>
+    <rdf:value>id</rdf:value>
+    <_3:end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">123</_3:end>
+  </_3:FragmentSelector>
+  <rdf:Description rdf:about="http://vitali.web.cs.unibo.it/raschietto/person/idauth">
+    <rdfs:label>nome autore</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,35 @@
+# -*- coding: utf-8 -*-
+
+from lxml import html
+import re
+import json
+
+tip1 = "Date and Volume: "
+tip2 = "Authors: "
+tip3 = "Title: "
+tip4 = "Keywords: "
+asd ="/home/web/ltw1514/html/project/documents A_Comparison_of_Two_Unsupervised_Table_Recognition_Methods_from_Digital_Scientific_Articles.html"
+############################# scraping Dlib
+def scrapeDlib(url):                                                
+
+	my_data = []
+	my_page = html.parse(url)
+	
+													
+	date = my_page.xpath("//p[@class='blue'][1]")[0].text_content().encode("utf8")
+	date = str.replace(date,"\n", "")
+	date = re.sub(' ', '', date, count=10)
+	#date = re.sub('Table of Contents', '',date, count=1)
+	authors = my_page.xpath("//p[@class='blue'][2]")[0].text_content().encode("utf8")
+	authors = str.replace(authors,"\n", " ")
+	keywords = my_page.xpath("//p[@class='blue'][5]")[0].text_content().encode("utf8")
+	title = my_page.xpath("//td/h3[2]")[0].text_content().encode("utf8")
+
+	my_data = [tip1+date,tip2+authors, keywords, tip3+title]
+
+	with open('../html/project/json/scrapingDlib.json', 'w') as outfile:
+		json.dump(my_data, outfile)
+
+scrapeDlib(asd)
+		
+

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-16">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="theme/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="theme/usebootstrap.css">
+    <link rel="stylesheet" href="theme/style.css">
+    <title>Raschietto - lela</title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <div class="col-lg-12">
+            <div class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"><big>Raschietto</big></a>
+                    </div>
+                    <div class="navbar-collapse collapse navbar-responsive-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#" id="linkFragment" class="" data-toggle="modal" data-target="#modalFilter">Select Filter</a>
+                            </li>
+                            <li><a href="#" id="linkManageAnnotation" class="hidden" data-toggle="modal" data-target="#modal4">Manage Annotation</a>
+                            </li>
+                            <li><a href="#" id="linkDocument" class="hidden" data-toggle="modal" data-target="#">Notes document</a>
+                            </li>
+                            <li>
+                                <form class="navbar-form navbar-left">
+                                </form>
+                                <input id="searchBar" type="text" class="form-control col-lg-8" placeholder="Insert URL">
+                            </li>
+                            <li><a href="#" data-toggle="modal" data-target="#modalHowTo">How To</a>
+                            </li>
+                            <li><a href="#" data-toggle="modal" data-target="#modalAbout">About</a>
+                            </li>
+                            <li><a href="#" id="linkLogin" data-toggle="modal" data-target="#modalLogin">Login</a>
+                            </li>
+                            <li><a href="#" id="linkLogout" class="hidden" onclick="confirmLogout()">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Page Content -->
+    <main>
+        <div class="container-fluid" id="page-container">
+            <div class="row">
+                <!-- Sidebar Widgets Colum -->
+                <div class="col-md-4 " >
+                    <div class="well">
+                        <h3 class="text-center">List of Document</h3>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="panel-group" id="documents">
+                                    <div class="panel panel-default" id="panel1">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+        <a data-toggle="collapse" data-target="#collapseOne" 
+           href="#collapseOne">
+          D-Lib Magazine November 14
+        </a>
+      </h4>
+
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse">
+                                            <div id="panelOne" class="panel-body"></div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default" id="panel2">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+        <a data-toggle="collapse" data-target="#collapseTwo" 
+           href="#collapseTwo" class="collapsed">
+          D-Lib Magazine Jenuary 13
+        </a>
+      </h4>
+
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse">
+                                            <div id="panelTwo" class="panel-body"></div>
+                                        </div>
+                                    </div>
+<div class="panel panel-default" id="panel3">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+        <a data-toggle="collapse" data-target="#collapseThree" 
+           href="#collapseThree">
+          Rivista statistica
+        </a>
+      </h4>
+
+                                        </div>
+                                        <div id="collapseThree" class="panel-collapse collapse">
+                                            <div id="panelThree" class="panel-body"></div>
+                                        </div>
+                                    </div>
+<div class="panel panel-default" id="panel4">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+        <a data-toggle="collapse" data-target="#collapseFour" 
+           href="#collapseFour">
+          Almatouris
+        </a>
+      </h4>
+
+                                        </div>
+                                        <div id="collapseFour" class="panel-collapse collapse">
+                                            <div id="panelFour" class="panel-body"></div>
+                                        </div>
+                                    </div>
+<div class="panel panel-default" id="panel5">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+        <a data-toggle="collapse" data-target="#collapseFive" 
+           href="#collapseFive">
+          Antropologia e teatro
+        </a>
+      </h4>
+
+                                        </div>
+                                        <div id="collapseFive" class="panel-collapse collapse">
+                                            <div id="panelFive" class="panel-body"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="well" id="wellListOfFilter" style="display: none;">
+                        <h3 class="text-center">List of filter</h3>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="list-group">
+                                    <a class="list-group-item btn annotazione-hasAuthor" id="hasAuthor" onclick="addAnnotazione(id)">has Author</a>
+                                    <a class="list-group-item btn annotazione-hasPublicationYear" id="hasPublicationYear" onclick="addAnnotazione(id)">
+                                        </i>has Year</a>
+                                    <a class="list-group-item btn annotazione-hasTitle" id="hasTitle" onclick="addAnnotazione(id)">has Title</a>
+                                    <a class="list-group-item btn annotazione-hasDOI" id="hasDOI" onclick="addAnnotazione(id)">has DOI</a>
+                                    <a class="list-group-item btn annotazione-hasURL" id="hasURL" onclick="addAnnotazione(id)">has URL</a>
+                                    <a class="list-group-item btn annotazione-hasComment" id="hasComment" onclick="addAnnotazione(id)">has Comment</a>
+                                    <a class="list-group-item btn annotazione-denotesRhetoric" id="denotesRhetoric" onclick="addAnnotazione(id)">denotes Rhetoric</a>
+                                    <a class="list-group-item btn annotazione-cites" id="cites" onclick="addAnnotazione(id)">cites</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="well">
+                        <h3 class="text-center">List of groups</h3>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <form>
+                                    <div>
+										<span id="groups"></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Text of Document -->
+                <div id="file" class="col-xs-12 col-md-8 col-lg-8 ">
+                    <div id="docum" class="col-xs-12 col-md-12 col-lg-12">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <hr>
+        <div class="container-fluid">
+            <div class="col-lg-12">
+                <div class="col-lg-6">
+                    <h2>Group Bio</h2>
+                    <p><big>We are the team LELA.</big>
+                    </p>
+                    <p>We are working at this project with passion. <strong>We wont 5 point each!</strong>
+                    </p>
+                    <p><small>LELA is the acronisums of our name: Lorenzo, Erik, Luca, Andrea.</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </footer>
+
+    <!-- Modal content -->
+
+    <div class="modal fade" id="modalHowTo">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModal1Label">How To</h4>
+                </div>
+                <div class="modal-body">
+
+                    <p>
+                        Dal pannello "Elenco Documenti" selezionare l'articolo scientifico a cui si è interessati.
+                        <br> Dopo aver scelto un documento, il suo contenuto e le annotazioni ad esso collegate verranno mostrati nella sezione centrale.
+                    </p>
+                    <h4>Visualizzare le annotazioni</h4>
+                    <p>
+                        Le annotazioni possono essere di due tipi:
+                    </p>
+                    <ul>
+                        <li> Frammento: annotazioni relative ad una parte di testo del documento selezionato. </li>
+                        <li> Documento: annotazioni relative all'intero documento selezionato. </li>
+                    </ul>
+                    <p>
+                        Le annotazioni di tipo <b>Frammento</b> vengono evidenziate (ognuna con il relativo stile) sui singoli frammenti di testo, il quale potrebbe contenere più di una annotazione (annotazioni multiple). Cliccando su un frammento verrà aperta una finestra modale, mostrante le informazioni relative a tutte le annotazioni collegate ad esso.
+                        <br>Le annotazioni di tipo <b>Documento</b> vengono mostrate nel pannello "Info Documento". Cliccando su una annotazione verrà aperta una finestra modale, mostrante le informazioni relative ad essa.
+                    </p>
+                    <h4>Filtrare le annotazioni</h4>
+                    <p>
+                        Dal pannello "Elenco Filtri" è possibile selezionare le annotazioni in modi differenti:
+                    </p>
+                    <ul>
+                        <li> Cliccando un bottone relativo ai filtri frammento verranno nascosti tutti i frammenti di testo relativi al tipo cliccato; </li>
+                        <li> Cliccando un bottone relativo ai filtri documento verranno nascoste le informazioni documento relative al tipo cliccato; </li>
+                        <li> Selezionando un autore verranno mostrate solo le annotazioni create dall'autore selezionato; </li>
+                        <li> Inserendo una data e spuntando il relativo checkbox verranno nascoste tutte le annotazioni con data di creazione precedente a quella inserita. </li>
+                    </ul>
+                    <h4>Creare le annotazioni</h4>
+                    <p>
+                        Dopo aver selezionato un documento è possibile passare in modalità Annotatore, cliccando sul relativo pulsante ed in seguito autenticandosi con Email e Password.
+                    </p>
+                    <p>
+                        Creare un'annotazione Frammento o Documento:
+                    </p>
+                    <ul>
+                        <li> Selezionare un frammento di testo all'interno del documento; </li>
+                        <li> Cliccare sulla voce "Annota Frammento" o "Annota Documento"; </li>
+                        <li> Selezionare tipo di annotazione da creare e cliccare su "Avanti"; </li>
+                        <li> Riempire i campi richiesti con le apposite informazioni e cliccare su "Conferma". </li>
+                    </ul>
+                    <h4>Gestire le annotazioni</h4>
+                    <p>
+                        Per gestire le annotazioni create e non ancora salvate è sufficiente cliccare su "Gestisci Annotazioni". Verrà aperta una finestra modale riportante la lista delle annotazioni create. Per ogni annotazione creata è possibile, cliccando sul relativo pulsante, modificare le informazioni inserite e cancellarla dalla memoria temporanea.
+                    </p>
+                    <p>Per uscire dalla modalità Annotatore è sufficiente cliccare sul pulsante "Esci".
+                        <br> N.B. L'uscita comporta la cancellazione di tutte le annotazioni create e non salvate.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalAbout">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModal2Label">About</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Progetto Raschietto del corso di Tecnologie Web 2015 realizzato da:</p>
+                    <br>
+                    <ul class="collection">
+                        <li class="collection-item avatar">
+                            <i class="circle"></i>
+                            <span class="title">Lorenzo Spinelli</span>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="circle"></i>
+                            <span class="title">Erik Mensah</span>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="circle"></i>
+                            <span class="title">Luca Tomasetti</span>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="mdi-av-play-arrow circle red"></i>
+                            <span class="title">Andrea Mengoli</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalLogin">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModal3Label">Login</h4>
+                </div>
+                <div class="modal-body">
+                    <br>
+                    <div class="input-group input-group-md">
+                        <span class="input-group-addon">ID</span>
+                        <input id="username" type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+                    </div>
+                    <br>
+                    <div class="input-group input-group-md">
+                        <span class="input-group-addon">@</span>
+                        <input id="email" type="text" class="form-control" placeholder="Email" aria-describedby="sizing-addon1">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="checkLogin()">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Modale per la visualizzazione finale delle annotazioni, prima di essere salvate -->
+    <div id="modal4" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Gestione Annotazioni</h4>
+                </div>
+                <div class="modal-body">
+                    <ul class="collection" id="listaAnnotazioni"></ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="save">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modale per le annotazioni e la loro modifica -->
+    <div id="gestioneAnnotModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Modifica Annotazione</h4>
+                </div>
+                <div class="modal-body">
+                    <div method="get" name="modulo" id="infoAnnot">
+                    </div>
+                </div>
+                <div class="modal-footer" id="bottoneModale">
+                    <button id="saveAnnotationButton" type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalFilter" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Notes Fragment</h4>
+                </div>
+                <div class="modal-body">
+                    <h3 class="text-center">List of filter</h3>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="list-group">
+                                <a class="list-group-item btn annotazione-hasAuthor" id="hasAuthor" onclick="">has Author</a>
+                                <a class="list-group-item btn annotazione-hasPublicationYear" id="hasPublicationYear" onclick="">
+                                    </i>has Year</a>
+                                <a class="list-group-item btn annotazione-hasTitle" id="hasTitle" onclick="">has Title</a>
+                                <a class="list-group-item btn annotazione-hasDOI" id="hasDOI" onclick="">has DOI</a>
+                                <a class="list-group-item btn annotazione-hasURL" id="hasURL" onclick="">has URL</a>
+                                <a class="list-group-item btn annotazione-hasComment" id="hasComment" onclick="">has Comment</a>
+                                <a class="list-group-item btn annotazione-denotesRhetoric" id="denotesRhetoric" onclick="">denotes Rhetoric</a>
+                                <a class="list-group-item btn annotazione-cites" id="cites" onclick="">cites</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer" id="bottoneModale">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  Scripts-->
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="bootstrap/usebootstrap.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.fileDownload.js"></script>
+
+</body>
+
+</html>

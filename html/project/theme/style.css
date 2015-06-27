@@ -1,0 +1,67 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+    padding: 0 15px;
+}
+
+.navBarHeight {
+    height: 50px;
+}
+
+.white {
+    color: white;
+}
+
+#file {
+    float: right;
+}
+
+.annotazione-hasAuthor {
+    background-color: red;
+    color: white;
+}
+
+.annotazione-hasPublicationYear {
+    background-color: orange;
+    color: white;
+}
+
+.annotazione-hasTitle {
+    background-color: purple;
+    color: white;
+}
+
+.annotazione-hasDOI {
+    background-color: brown;
+    color: white;
+}
+
+.annotazione-hasURL {
+    background-color: black;
+    color: white;
+}
+
+.annotazione-hasComment {
+    background-color: grey;
+    color: white;
+}
+
+.annotazione-denotesRhetoric {
+    background-color: blue;
+    color: white;
+}
+
+.annotazione-cites {
+    background-color: green;
+    color: white;
+}
+
+h1 {
+    color: #d9230f;
+}

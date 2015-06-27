@@ -1,0 +1,45 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+from lxml import html, etree
+import sys
+import httplib
+import json
+
+indexToStart = 0
+
+url = "http://www.dlib.org/dlib/january09/vanveen/01vanveen.html"#json.load(sys.stdin) # link dell'articolo 
+
+if (url.find("https://") == 0):
+	indexToStart = 8
+else :
+	indexToStart = 7
+
+data = url[indexToStart:]
+domain = data[:data.index("/")]
+path = data[data.index("/"):]
+
+conn = httplib.HTTPConnection(domain)										
+conn.request("GET", path)
+res = conn.getresponse()
+body = res.read()
+
+tree = html.fromstring(body)
+
+if (domain == "www.dlib.org"):
+	xpath = "//table[3]//table[5]//td[2]"
+elif (data.find("unibo.it/article") >= 0):
+	xpath = "//div[@id=\"content\"]"
+else :
+	xpath = "//body"
+try:
+	tree2 = tree.xpath(xpath)[0]
+except IndexError:
+	tree2 = tree.xpath("//body")[0]
+
+tree2.make_links_absolute(url, resolve_base_href=True)
+response = etree.tostring(tree2, method="html")
+
+# ritorno un json contenente la lista dei link html della pagina
+print "Content-Type: application/json\n\n"
+json.dump(response, sys.stdout, indent=2)

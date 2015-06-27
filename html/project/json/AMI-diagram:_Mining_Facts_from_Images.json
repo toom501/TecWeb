@@ -1,0 +1,36 @@
+{
+    "data": [
+        {
+            "provenance": {
+                "time": "11/6/2015 - 15:32:59",
+                "author": {
+                    "name": "gggg",
+                    "email": "g@sdj.it"
+                }
+            },
+            "dati": {
+                "pos": 0,
+                "id": 0,
+                "idDad": "p-3"
+            },
+            "annotations": [
+                {
+                    "body": {
+                        "predicate": "schema:comment",
+                        "literal": " is a tool for mining facts from diagrams, and converting the graphics primitives into XML. Targets include X-Y plots, barcharts, chemical structure diagrams and p",
+                        "subject": "AMI-diagram:_Mining_Facts_from_Images_p-3_td-1_tr-0_tbody-0_table-0"
+                    },
+                    "type": "hasComment",
+                    "label": ""
+                }
+            ],
+            "target": {
+                "source": " is a tool for mining facts from diagrams, and converting the graphics primitives into XML. Targets include X-Y plots, barcharts, chemical structure diagrams and p",
+                "end": 178,
+                "id": "_p-3_td-1_tr-0_tbody-0_table-0",
+                "start": 12
+            }
+        }
+    ],
+    "nomeFile": "AMI-diagram:_Mining_Facts_from_Images.json"
+}

@@ -1,0 +1,226 @@
+[
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "November/December 2014\nVolume 20, Number 11/12Table of Contents\n",
+                    "predicate": "webscraping:hasPublicationYear",
+                    "subject": "Conference_Report:_Research_Data_Alliance_(RDA)_4th_Plenary_Meeting"
+                },
+                "label": "",
+                "type": "hasPublicationYear"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "p-0",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:29:08.638358"
+        },
+        "target": {
+            "end": 64,
+            "id": "bo",
+            "source": "November/December 2014\nVolume 20, Number 11/12Table of Contents\n",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "\nYolanda Meleco \nResearch Data Alliance/U.S.\nmelecy@rpi.edu\n\n\ndoi:10.1045/november14-meleco\n ",
+                    "predicate": "dcterms:creator",
+                    "subject": "Conference_Report:_Research_Data_Alliance_(RDA)_4th_Plenary_Meeting"
+                },
+                "label": "",
+                "type": "hasAuthor"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "p-1",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:29:08.638358"
+        },
+        "target": {
+            "end": 93,
+            "id": "bo",
+            "source": "\nYolanda Meleco \nResearch Data Alliance/U.S.\nmelecy@rpi.edu\n\n\ndoi:10.1045/november14-meleco\n ",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "Conference Report: Research Data Alliance (RDA) 4th Plenary Meeting",
+                    "predicate": "dcterms:title",
+                    "subject": "Conference_Report:_Research_Data_Alliance_(RDA)_4th_Plenary_Meeting"
+                },
+                "label": "",
+                "type": "hasTitle"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-4",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:29:08.638358"
+        },
+        "target": {
+            "end": 67,
+            "id": "bo",
+            "source": "Conference Report: Research Data Alliance (RDA) 4th Plenary Meeting",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-5",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:29:08.638358"
+        },
+        "target": {
+            "end": 8,
+            "id": "bo",
+            "source": "Abstract",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-6",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:29:08.638358"
+        },
+        "target": {
+            "end": 8,
+            "id": "bo",
+            "source": "Overview",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-7",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:29:08.638358"
+        },
+        "target": {
+            "end": 13,
+            "id": "bo",
+            "source": "Looking Ahead",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-8",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:29:08.638358"
+        },
+        "target": {
+            "end": 16,
+            "id": "bo",
+            "source": "About the Author",
+            "start": 0
+        }
+    }
+]

@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:ns1="http://www.w3.org/ns/oa#"
+  xmlns:ns2="http://purl.org/vocab/frbr/core#"
+  xmlns:ns3="http://purl.org/spar/fabio/"
+  xmlns:ns4="http://schema.org/"
+  xmlns:ns5="http://xmlns.com/foaf/0.1/"
+>
+  <ns1:Annotation rdf:nodeID="N3b976fab1ebe4fe6b3691c77d3af13c8">
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="Ne83a404e87be4aaa9605367c4b5a2ab8">
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="N7a50d9acdd0549778af9543e91518618">
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+            <rdf:value>id</rdf:value>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <ns1:annotatedAt>2015-06-26 11:01:38.659630</ns1:annotatedAt>
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="N576a2cfe3d9b4753bd910bf9ae2c0c18">
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo_ver1"/>
+        <rdf:predicate rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdf:object rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo_ver1_cited3"/>
+        <rdfs:label>questo articolo cita 'titolo articolo'</rdfs:label>
+      </rdf:Statement>
+    </ns1:hasBody>
+    <ns1:annotatedBy>
+      <rdf:Description rdf:about="mailto:webscraping@unibo.it">
+        <ns4:mail>webscraping@unibo.it</ns4:mail>
+        <ns5:name>webscraping</ns5:name>
+      </rdf:Description>
+    </ns1:annotatedBy>
+    <rdfs:label>Citazione</rdfs:label>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="Naf580319aec34570889747cf14c3c8e6">
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="N6f2cb4360c7f4022815c1522382bfb88">
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo_ver1"/>
+        <rdf:predicate rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdf:object rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo_ver1_cited3"/>
+        <rdfs:label>questo articolo cita 'titolo articolo'</rdfs:label>
+      </rdf:Statement>
+    </ns1:hasBody>
+    <ns1:annotatedAt>2015-06-26 11:01:38.661300</ns1:annotatedAt>
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="Ne8a69f84bfa14673b24b40b0d74debc1">
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="Ne86168d26ac24a84879dc3be35c3fbe6">
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+            <rdf:value>id</rdf:value>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <rdfs:label>Citazione</rdfs:label>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="Ne29fcf81393c48bf8d58a170ee7f5bf6">
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="N9a4edac98291473e9f7a950ba3e8caea">
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="Na89112419b7746aba9e17645ad9a9b62">
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+            <rdf:value>id</rdf:value>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+    <rdfs:label>Autore</rdfs:label>
+    <ns1:annotatedAt>2015-06-26 11:01:38.611383</ns1:annotatedAt>
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="Ndebc11407a404547ad3c417efe6917cb">
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo"/>
+        <rdfs:label>un autore del documento e' Michelle Brook</rdfs:label>
+        <rdf:predicate rdf:resource="http://purl.org/dc/terms/creator"/>
+        <rdf:object rdf:resource="http://vitali.web.cs.unibo.it/raschietto/person/idauth"/>
+      </rdf:Statement>
+    </ns1:hasBody>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="N64daec6b0db0476492606b4d28c49978">
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+    <ns1:annotatedAt>2015-06-26 11:01:38.621157</ns1:annotatedAt>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="Na816e2ff59c54e20ae5dae8294d1a323">
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="Nd2c3105045924e56a53b14c3229f4006">
+            <rdf:value>id</rdf:value>
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="N23c4876c211948069b8fd0c50031fe8b">
+        <rdf:predicate rdf:resource="http://purl.org/dc/terms/creator"/>
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo"/>
+        <rdfs:label>un autore del documento e' Charles Oppenheim</rdfs:label>
+        <rdf:object rdf:resource="http://vitali.web.cs.unibo.it/raschietto/person/idauth"/>
+      </rdf:Statement>
+    </ns1:hasBody>
+    <rdfs:label>Autore</rdfs:label>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="Nfea7b08f58d74be5a41e6264de519d32">
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="N1bf451ffb9464eb19e3700b8759245fa">
+        <rdf:predicate rdf:resource="http://purl.org/spar/fabio/hasPublicationYear"/>
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo_ver1"/>
+        <rdf:object rdf:datatype="http://www.w3.org/2001/XMLSchema#date">November/December 2014
+Volume 20, Number 11/12Table of Contents
+</rdf:object>
+      </rdf:Statement>
+    </ns1:hasBody>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="N4ac8ede0d250456f98af1a2312da7928">
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="N4d085f2007c646688323cde0f4005b47">
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+            <rdf:value>id</rdf:value>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <ns1:annotatedAt>2015-06-26 11:01:38.605056</ns1:annotatedAt>
+    <rdfs:label>Data</rdfs:label>
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="N5473c090204a4da1b47a526231e30d9e">
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+    <rdfs:label>Autore</rdfs:label>
+    <ns1:annotatedAt>2015-06-26 11:01:38.616267</ns1:annotatedAt>
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="N45916ee308914691b061d7aa15bb4dd2">
+        <rdfs:label>un autore del documento e' Peter Murray-Rust</rdfs:label>
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo"/>
+        <rdf:object rdf:resource="http://vitali.web.cs.unibo.it/raschietto/person/idauth"/>
+        <rdf:predicate rdf:resource="http://purl.org/dc/terms/creator"/>
+      </rdf:Statement>
+    </ns1:hasBody>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="N97240df1f0f5429bbdbbcf27b10b091b">
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="Ne1c956dca4994257b0271026a5264f8c">
+            <rdf:value>id</rdf:value>
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="N7d55708d3e6e40a4b450ccb92b30fbac">
+    <ns1:annotatedAt>2015-06-26 11:01:38.662957</ns1:annotatedAt>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="N29cc36dccc4443649ed37f85a83a0385">
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="N77eb2db123aa40828f302bd9156535ec">
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <rdf:value>id</rdf:value>
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="Ncd4068111fd642ac824d81b3bc5f7431">
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo_ver1"/>
+        <rdf:object rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo_ver1_cited3"/>
+        <rdf:predicate rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:label>questo articolo cita 'titolo articolo'</rdfs:label>
+      </rdf:Statement>
+    </ns1:hasBody>
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+    <rdfs:label>Citazione</rdfs:label>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="N1d91c474868d42a1bd29fd276619c42c">
+    <rdfs:label>Retorica</rdfs:label>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="Nede51424070c4f21a431600575bfbad0">
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="N0fac1056f5314de79191080ac60cc04d">
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+            <rdf:value>id</rdf:value>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="N181edc184e084d9ea5119d0382907f07">
+        <rdf:predicate rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes"/>
+        <rdf:object>deo:Introduction</rdf:object>
+        <rdfs:label>N181edc184e084d9ea5119d0382907f07</rdfs:label>
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html#id-0-123"/>
+      </rdf:Statement>
+    </ns1:hasBody>
+    <ns1:annotatedAt>2015-06-26 11:01:38.645351</ns1:annotatedAt>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="N5596d168da874249a072908699e63f6f">
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="Nef2c18d80b3a48218f1350b971e4257c">
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="Na6e32c8c1fc94acbadcd10632a683a05">
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <rdf:value>id</rdf:value>
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <ns1:annotatedAt>2015-06-26 11:01:38.632827</ns1:annotatedAt>
+    <rdfs:label>Retorica</rdfs:label>
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="N412a780ab15746f38c7f097106b1f4df">
+        <rdfs:label>N412a780ab15746f38c7f097106b1f4df</rdfs:label>
+        <rdf:object>deo:Introduction</rdf:object>
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html#id-0-123"/>
+        <rdf:predicate rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes"/>
+      </rdf:Statement>
+    </ns1:hasBody>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="N5f6fac0fb3d24c9da65506609852eb09">
+    <ns1:annotatedAt>2015-06-26 11:01:38.626173</ns1:annotatedAt>
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="N3efb29ae76ad4c8e82af489bb4af18c5">
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="N093ea11db2d64243802699d6d15898d5">
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <rdf:value>id</rdf:value>
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <rdfs:label>Autore</rdfs:label>
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="N6fd3912b5de24524be0eb90816be374f">
+        <rdf:predicate rdf:resource="http://purl.org/dc/terms/creator"/>
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo"/>
+        <rdf:object rdf:resource="http://vitali.web.cs.unibo.it/raschietto/person/idauth"/>
+        <rdfs:label>un autore del documento e' doi:10.1045/november14-brook</rdfs:label>
+      </rdf:Statement>
+    </ns1:hasBody>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="N12767c90ba5b4f268b8703f62ccb0514">
+    <rdfs:label>Retorica</rdfs:label>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="Nb18e1df0aef247c897703c92140233d1">
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="N950da2fc686148dd9178f5b57708a3e3">
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <rdf:value>id</rdf:value>
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="Nd1ec2c9daf4a4d7f83231b847103ace2">
+        <rdfs:label>Nd1ec2c9daf4a4d7f83231b847103ace2</rdfs:label>
+        <rdf:object>deo:Introduction</rdf:object>
+        <rdf:predicate rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes"/>
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html#id-0-123"/>
+      </rdf:Statement>
+    </ns1:hasBody>
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+    <ns1:annotatedAt>2015-06-26 11:01:38.643667</ns1:annotatedAt>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="Nbfda0755fe0d487db1a4701bafeabf46">
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="N61b7075856024917a88e7707862c3002">
+        <rdf:object rdf:resource="http://vitali.web.cs.unibo.it/raschietto/person/idauth"/>
+        <rdf:predicate rdf:resource="http://purl.org/dc/terms/creator"/>
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo"/>
+        <rdfs:label>un autore del documento e' The Content Mine</rdfs:label>
+      </rdf:Statement>
+    </ns1:hasBody>
+    <ns1:annotatedAt>2015-06-26 11:01:38.613042</ns1:annotatedAt>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="N55d9c60a5022436397b2656b06098d67">
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="N8657ef2b6afc454c853cd952d1caf591">
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <rdf:value>id</rdf:value>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+    <rdfs:label>Autore</rdfs:label>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="Ne06b9ee2c216482595ca7cd3874709d9">
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="N00228afe3f4f420d9885fd1c0861f2d1">
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="N34e58ce2ffd942db9a9d2f082b11e113">
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <rdf:value>id</rdf:value>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="N63ba0f46c9fc474695de07462f6709e6">
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo_ver1"/>
+        <rdf:predicate rdf:resource="http://purl.org/spar/fabio/hasURL"/>
+        <rdf:object rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dlib.org/dlib/november14/brook/11brook.html</rdf:object>
+      </rdf:Statement>
+    </ns1:hasBody>
+    <rdfs:label>URL</rdfs:label>
+    <ns1:annotatedAt>2015-06-26 11:01:38.649825</ns1:annotatedAt>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="Nabc5dd41bfc6444c8fe548b2f3e8d863">
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="N3a764cd5fad54bff90084e5f25428bf2">
+        <rdfs:label>un autore del documento e' michelle@contentmine.org</rdfs:label>
+        <rdf:predicate rdf:resource="http://purl.org/dc/terms/creator"/>
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo"/>
+        <rdf:object rdf:resource="http://vitali.web.cs.unibo.it/raschietto/person/idauth"/>
+      </rdf:Statement>
+    </ns1:hasBody>
+    <ns1:annotatedAt>2015-06-26 11:01:38.614649</ns1:annotatedAt>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="N8509f6194a3a4a26ac47dd50a18f5c9a">
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="Nd471a25162ee446c98599e182e5c736b">
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+            <rdf:value>id</rdf:value>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <rdfs:label>Autore</rdfs:label>
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="Nfbddfda5ce494ee9975a4a23b9ac242d">
+    <ns1:annotatedAt>2015-06-26 11:01:38.617893</ns1:annotatedAt>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="N7d9aaa90ff144750b888374df316f96b">
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="Na13179cad8474822a130c0083c8cb50c">
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <rdf:value>id</rdf:value>
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <rdfs:label>Autore</rdfs:label>
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="N2cf492ddbbea4c239421b506846dc98e">
+        <rdf:object rdf:resource="http://vitali.web.cs.unibo.it/raschietto/person/idauth"/>
+        <rdfs:label>un autore del documento e' University of Cambridge</rdfs:label>
+        <rdf:predicate rdf:resource="http://purl.org/dc/terms/creator"/>
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo"/>
+      </rdf:Statement>
+    </ns1:hasBody>
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="N4ece93b91d564bf68f56e4731a6b11b2">
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="N38dd9787545f42deadde1468a837f77b">
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="N0826e296dac841839617ef4c1809623b">
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <rdf:value>id</rdf:value>
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <rdfs:label>Commento</rdfs:label>
+    <ns1:annotatedAt>2015-06-26 11:01:38.652945</ns1:annotatedAt>
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="Nfb24c9788f4643d99fd08c47cbaee062">
+        <rdf:object rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D-Lib Magazine</rdf:object>
+        <rdf:predicate rdf:resource="http://schema.org/comment"/>
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html#id-0-123"/>
+      </rdf:Statement>
+    </ns1:hasBody>
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="N5c385238302d4301be4411183c25eb2b">
+    <rdfs:label>Retorica</rdfs:label>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="N84bde1cbb1974525bab878e37efae695">
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="Na6ccef0c060446cdb86bba82a5fdebcd">
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <rdf:value>id</rdf:value>
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <ns1:annotatedAt>2015-06-26 11:01:38.637364</ns1:annotatedAt>
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="N5ded41ebfb6649fb96dd3ea06918b67f">
+        <rdf:predicate rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes"/>
+        <rdfs:label>N5ded41ebfb6649fb96dd3ea06918b67f</rdfs:label>
+        <rdf:object>deo:Introduction</rdf:object>
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html#id-0-123"/>
+      </rdf:Statement>
+    </ns1:hasBody>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="Ncc9fe42397f44dbdbf876485eb4d6074">
+    <ns1:annotatedAt>2015-06-26 11:01:38.651383</ns1:annotatedAt>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="N757b02a4c83d417496543498c75fd473">
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="Na309c5e18e3b48808784054ebcc7ac31">
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+            <rdf:value>id</rdf:value>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <rdfs:label>Commento</rdfs:label>
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="N05aa60f3100244c69c229437e3320293">
+        <rdf:predicate rdf:resource="http://schema.org/comment"/>
+        <rdf:object rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Copyright © 2014 Michelle Brook, Peter Murray-Rust and Charles Oppenheim</rdf:object>
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html#id-0-123"/>
+      </rdf:Statement>
+    </ns1:hasBody>
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="N5294f3a0bc23410da183462e39de8deb">
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="Na15bdb84f6db4ec9b955bb5bc7f404bb">
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="N47e421557dc14abba64d825c057ae7ab">
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+            <rdf:value>id</rdf:value>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <rdfs:label>Citazione</rdfs:label>
+    <ns1:annotatedAt>2015-06-26 11:01:38.657974</ns1:annotatedAt>
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="N0f6e7e3b611d4db58d2d43195c7df4b1">
+        <rdfs:label>questo articolo cita 'titolo articolo'</rdfs:label>
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo_ver1"/>
+        <rdf:object rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo_ver1_cited3"/>
+        <rdf:predicate rdf:resource="http://purl.org/spar/cito/cites"/>
+      </rdf:Statement>
+    </ns1:hasBody>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="N20c8c7f2c5bb48dfabbd18af5ad2f491">
+    <rdfs:label>Autore</rdfs:label>
+    <ns1:annotatedAt>2015-06-26 11:01:38.619511</ns1:annotatedAt>
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="N064eaee51b424d97926bd802046f4e6f">
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="N0b328c4a18c142d088db5b20206a0a59">
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <rdf:value>id</rdf:value>
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="N9118d006b7344f4d8133a657042187eb">
+        <rdf:object rdf:resource="http://vitali.web.cs.unibo.it/raschietto/person/idauth"/>
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo"/>
+        <rdfs:label>un autore del documento e' pm286@cam.ac.uk</rdfs:label>
+        <rdf:predicate rdf:resource="http://purl.org/dc/terms/creator"/>
+      </rdf:Statement>
+    </ns1:hasBody>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="N48d9ae555554469ba7dc21212f06c08f">
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="Nf94a3610fe1f4e14906a8d81cc54ee24">
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo_ver1"/>
+        <rdf:predicate rdf:resource="http://purl.org/dc/terms/title"/>
+        <rdf:object rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Social, Political and Legal Aspects of Text and Data Mining (TDM)</rdf:object>
+      </rdf:Statement>
+    </ns1:hasBody>
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="N1cb21e7066ab4e6ca1f443c31dea8984">
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="N8e5a7f512a604435892bc0a13adcaca8">
+            <rdf:value>id</rdf:value>
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <ns1:annotatedAt>2015-06-26 11:01:38.629357</ns1:annotatedAt>
+    <rdfs:label>Titolo</rdfs:label>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="N1282631e2bf04edab3ed4b21efadef5b">
+    <rdfs:label>Retorica</rdfs:label>
+    <ns1:annotatedAt>2015-06-26 11:01:38.638858</ns1:annotatedAt>
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="Ne3d9cb23b2a34f9a94c9fa44a0c97bf8">
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html#id-0-123"/>
+        <rdf:predicate rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes"/>
+        <rdfs:label>Ne3d9cb23b2a34f9a94c9fa44a0c97bf8</rdfs:label>
+        <rdf:object>deo:Introduction</rdf:object>
+      </rdf:Statement>
+    </ns1:hasBody>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="N67f41ff111d44180a4acdd8522d26819">
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="N5d7360b8774642e69409109ecaeaddc4">
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+            <rdf:value>id</rdf:value>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="Nf7b8944df304497fbe6d57fdf204b4b5">
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="Ncf9ecc661d33494f896db034e5846040">
+        <rdfs:label>Ncf9ecc661d33494f896db034e5846040</rdfs:label>
+        <rdf:predicate rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes"/>
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html#id-0-123"/>
+        <rdf:object>deo:Introduction</rdf:object>
+      </rdf:Statement>
+    </ns1:hasBody>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="N295820fabf5149358d0a60bb680e3beb">
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="N96ed13e3f00040518769063fccef8fd8">
+            <rdf:value>id</rdf:value>
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <rdfs:label>Retorica</rdfs:label>
+    <ns1:annotatedAt>2015-06-26 11:01:38.635849</ns1:annotatedAt>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="Nd3f8e364193c426ca2c2b400eeab1412">
+    <ns1:annotatedAt>2015-06-26 11:01:38.634327</ns1:annotatedAt>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="Nbbfb3f5e8e4e4359b23806f5f1d92848">
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="Nc10d7b52c8924fa180e1430ead5203bf">
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <rdf:value>id</rdf:value>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="Nbb1485825e6c4a9bbb930ee51b362cff">
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html#id-0-123"/>
+        <rdf:predicate rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes"/>
+        <rdfs:label>Nbb1485825e6c4a9bbb930ee51b362cff</rdfs:label>
+        <rdf:object>deo:Introduction</rdf:object>
+      </rdf:Statement>
+    </ns1:hasBody>
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+    <rdfs:label>Retorica</rdfs:label>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="Na87e17e67db645ce90926281355a382a">
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="Nac8b8e6c0efc4e24811d66d917236564">
+        <rdf:predicate rdf:resource="http://prismstandard.org/namespaces/basic/2.0/doi"/>
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo_ver1"/>
+        <rdf:object rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.1045/november14-brook</rdf:object>
+      </rdf:Statement>
+    </ns1:hasBody>
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+    <rdfs:label>DOI</rdfs:label>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="N014208ad71344d209761e313dcab1ece">
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="Nde5158b2d80d434596a3e6b1d179905f">
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+            <rdf:value>id</rdf:value>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <ns1:annotatedAt>2015-06-26 11:01:38.627863</ns1:annotatedAt>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="N315dbe72ff0848eaba40ff712acebfbb">
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+    <ns1:annotatedAt>2015-06-26 11:01:38.648347</ns1:annotatedAt>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="N83e334e76bb245efb138d65139a86d1f">
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="Nb74a78d8b35b41d6a122567b2fad3f60">
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <rdf:value>id</rdf:value>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="Nc32d4f44f3ed40fc83c1d76f27e23c8a">
+        <rdf:predicate rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes"/>
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html#id-0-123"/>
+        <rdf:object>deo:Introduction</rdf:object>
+        <rdfs:label>Nc32d4f44f3ed40fc83c1d76f27e23c8a</rdfs:label>
+      </rdf:Statement>
+    </ns1:hasBody>
+    <rdfs:label>Retorica</rdfs:label>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="N988a00fbb01a424b96cf15f790748856">
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="N807f855688744dcebf7d7922795b25fd">
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="N091df968250140e1b98e7631756af04b">
+            <rdf:value>id</rdf:value>
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <ns1:annotatedAt>2015-06-26 11:01:38.640580</ns1:annotatedAt>
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="N7071e1090c0c4463a1e774deaa389b26">
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html#id-0-123"/>
+        <rdfs:label>N7071e1090c0c4463a1e774deaa389b26</rdfs:label>
+        <rdf:predicate rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes"/>
+        <rdf:object>deo:Introduction</rdf:object>
+      </rdf:Statement>
+    </ns1:hasBody>
+    <rdfs:label>Retorica</rdfs:label>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="N86390f1bf7f442da9519f96b545f350a">
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="N7cc16c813189432faf220854a87f3f44">
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo_ver1"/>
+        <rdf:predicate rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdf:object rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo_ver1_cited3"/>
+        <rdfs:label>questo articolo cita 'titolo articolo'</rdfs:label>
+      </rdf:Statement>
+    </ns1:hasBody>
+    <rdfs:label>Citazione</rdfs:label>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="N9eb2a1c8c3c24cac9a10835c405c8fbb">
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="Nfdb7a9ac62254c078657af974185b61d">
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <rdf:value>id</rdf:value>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+    <ns1:annotatedAt>2015-06-26 11:01:38.654607</ns1:annotatedAt>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="N00dc5a7a62ad4b89bda06038cdeece07">
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="Ndb9f0dd5deb54084a0fea5583fdb2c6b">
+        <rdfs:label>un autore del documento e' City, Northampton and Robert Gordon Universities</rdfs:label>
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo"/>
+        <rdf:predicate rdf:resource="http://purl.org/dc/terms/creator"/>
+        <rdf:object rdf:resource="http://vitali.web.cs.unibo.it/raschietto/person/idauth"/>
+      </rdf:Statement>
+    </ns1:hasBody>
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="N1c7b921658c442e29d53e562344fee7d">
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="Nea3ecf80953e47e0b399a6ec16da4716">
+            <rdf:value>id</rdf:value>
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <ns1:annotatedAt>2015-06-26 11:01:38.622919</ns1:annotatedAt>
+    <rdfs:label>Autore</rdfs:label>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="N48235f88072e4798a38a64b505eba571">
+    <rdfs:label>Citazione</rdfs:label>
+    <ns1:annotatedAt>2015-06-26 11:01:38.664585</ns1:annotatedAt>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="Ne3b6f5ab34be434e9ea3231f839f1889">
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="Nb008c59c311b456fbded3064c245377b">
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <rdf:value>id</rdf:value>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="N53f8aecaff3245c7b76f7d92498922e0">
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo_ver1"/>
+        <rdf:predicate rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdf:object rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo_ver1_cited3"/>
+        <rdfs:label>questo articolo cita 'titolo articolo'</rdfs:label>
+      </rdf:Statement>
+    </ns1:hasBody>
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="N35bb0f5fdb4a4a3eb03136f99b08dfa5">
+    <rdfs:label>Citazione</rdfs:label>
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="Ndb2cf9137a68462aa9654d16795dccf5">
+        <rdf:object rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo_ver1_cited3"/>
+        <rdf:predicate rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:label>questo articolo cita 'titolo articolo'</rdfs:label>
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo_ver1"/>
+      </rdf:Statement>
+    </ns1:hasBody>
+    <ns1:annotatedAt>2015-06-26 11:01:38.656316</ns1:annotatedAt>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="Nc3397f5f425e4d65b966d9cfbab29344">
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="Na5bc4a3da32642e68e4173c7e4d31ce4">
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <rdf:value>id</rdf:value>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="N74baf2623807448bae8a83d2d094c2bf">
+    <ns1:annotatedAt>2015-06-26 11:01:38.666247</ns1:annotatedAt>
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="N3d9c6528ae24423b84f07188a323d570">
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="Nde6ec0b81bf44884bc046696d5071321">
+            <rdf:value>id</rdf:value>
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="Nc5003bf13a6741e4b3b4086a18ea2585">
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo_ver1"/>
+        <rdf:predicate rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdf:object rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo_ver1_cited3"/>
+        <rdfs:label>questo articolo cita 'titolo articolo'</rdfs:label>
+      </rdf:Statement>
+    </ns1:hasBody>
+    <rdfs:label>Citazione</rdfs:label>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="Nf072d9e33eff4c55826a49d6c609f13b">
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+    <ns1:annotatedAt>2015-06-26 11:01:38.631296</ns1:annotatedAt>
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="N6251a7497992457597a55fa24415339c">
+        <rdf:object>deo:Introduction</rdf:object>
+        <rdf:predicate rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes"/>
+        <rdfs:label>N6251a7497992457597a55fa24415339c</rdfs:label>
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html#id-0-123"/>
+      </rdf:Statement>
+    </ns1:hasBody>
+    <rdfs:label>Retorica</rdfs:label>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="N7ec82e0bacee4de190fe592c29c10c6a">
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="N1baa537d3b584c5c9eca26b4eabb644b">
+            <rdf:value>id</rdf:value>
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="Nb01cdbd337f14ffeb6df8471e7d889f6">
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="N0f38b01d1400418c8fb1982888969c96">
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="N67d640c1591e4723a33eef600a0d120c">
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <rdf:value>id</rdf:value>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <ns1:annotatedAt>2015-06-26 11:01:38.624554</ns1:annotatedAt>
+    <rdfs:label>Autore</rdfs:label>
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="N7026be4a9cbf4981a29bbdce9102ad6f">
+        <rdf:object rdf:resource="http://vitali.web.cs.unibo.it/raschietto/person/idauth"/>
+        <rdfs:label>un autore del documento e' c.oppenheim@btinternet.com</rdfs:label>
+        <rdf:predicate rdf:resource="http://purl.org/dc/terms/creator"/>
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo"/>
+      </rdf:Statement>
+    </ns1:hasBody>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="Nf0d1ca9c5f2b4d7ea60a93e7c386e959">
+    <rdfs:label>Retorica</rdfs:label>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="Ncf6a238356164a54ac7549a4f87789bc">
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="N685ceb0d26c4473585a89186740705b3">
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+            <rdf:value>id</rdf:value>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="N6b24c58a85274ed2ad8fb3a6f90c7f35">
+        <rdf:predicate rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes"/>
+        <rdf:object>deo:Introduction</rdf:object>
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html#id-0-123"/>
+        <rdfs:label>N6b24c58a85274ed2ad8fb3a6f90c7f35</rdfs:label>
+      </rdf:Statement>
+    </ns1:hasBody>
+    <ns1:annotatedAt>2015-06-26 11:01:38.642107</ns1:annotatedAt>
+  </ns1:Annotation>
+  <ns1:Annotation rdf:nodeID="N1205104791f34632bd6335e5df59ed83">
+    <ns1:annotatedAt>2015-06-26 11:01:38.646835</ns1:annotatedAt>
+    <ns1:hasTarget>
+      <ns1:SpecificResource rdf:nodeID="Ne11b0c9485764fbaba2497cc669b75cf">
+        <ns1:hasSource rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+        <ns1:hasSelector>
+          <ns1:FragmentSelector rdf:nodeID="N059939942cb74c5c8402f6fa40ece311">
+            <ns1:start rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ns1:start>
+            <ns1:end rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">123</ns1:end>
+            <rdf:value>id</rdf:value>
+          </ns1:FragmentSelector>
+        </ns1:hasSelector>
+      </ns1:SpecificResource>
+    </ns1:hasTarget>
+    <rdfs:label>Retorica</rdfs:label>
+    <ns1:hasBody>
+      <rdf:Statement rdf:nodeID="N83d84ac00724460099d39a49e9fdc7d5">
+        <rdf:predicate rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes"/>
+        <rdf:object>deo:Introduction</rdf:object>
+        <rdfs:label>N83d84ac00724460099d39a49e9fdc7d5</rdfs:label>
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html#id-0-123"/>
+      </rdf:Statement>
+    </ns1:hasBody>
+    <ns1:annotatedBy rdf:resource="mailto:webscraping@unibo.it"/>
+  </ns1:Annotation>
+  <rdf:Description rdf:about="http://vitali.web.cs.unibo.it/raschietto/person/idauth">
+    <rdfs:label>pm286@cam.ac.uk</rdfs:label>
+    <rdfs:label>michelle@contentmine.org</rdfs:label>
+    <rdfs:label>doi:10.1045/november14-brook</rdfs:label>
+    <rdfs:label>c.oppenheim@btinternet.com</rdfs:label>
+    <rdfs:label>The Content Mine</rdfs:label>
+    <rdfs:label>Peter Murray-Rust</rdfs:label>
+    <rdfs:label>University of Cambridge</rdfs:label>
+    <rdfs:label>City, Northampton and Robert Gordon Universities</rdfs:label>
+    <rdfs:label>Michelle Brook</rdfs:label>
+    <rdfs:label>Charles Oppenheim</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo_ver1_cited3">
+    <rdfs:label>[4] I. Hargreaves, Digital Opportunity, 2011.</rdfs:label>
+    <rdfs:label>[3] D. McDonald and U. Kelly, The value and benefits of text mining, 2012.</rdfs:label>
+    <rdfs:label>[1] J. Clark, Text mining and scholarly publishing, 2012.</rdfs:label>
+    <rdfs:label>[5] LACA Response to Independent Review on Intellectual Property and Growth, 2011.</rdfs:label>
+    <rdfs:label>[8] LIBER News, 2014.</rdfs:label>
+    <rdfs:label>[2] J. R. Hobbs, D. E. Walker and R. A. Amsler, Natural language access to structured text, Proceedings of COLING '82, the 9th Conference on Computational Linguistics, 1982, 1, 127-132. http://doi.org/10.3115/991813.991833</rdfs:label>
+    <rdfs:label>[7] STM, Text and data mining: STM statement and sample licence, 2014.</rdfs:label>
+    <rdfs:label>[6] UK Intellectual Property Office, Economic Impact of Recommendations, 2012.</rdfs:label>
+  </rdf:Description>
+  <ns3:Expression rdf:about="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo_ver1">
+    <ns3:hasRepresentation>
+      <ns3:Item rdf:about="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+    </ns3:hasRepresentation>
+  </ns3:Expression>
+  <ns3:Work rdf:about="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo">
+    <ns3:hasPortrayal rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo.html"/>
+    <ns2:realization rdf:resource="http://www.dlib.org/dlib/november14/brook/11brook.htmlarticolo_ver1"/>
+  </ns3:Work>
+</rdf:RDF>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdfs='http://www.w3.org/2000/01/rdf-schema#'
+  xmlns:_7='http://purl.org/vocab/frbr/core#'
+  xmlns:_6='http://xmlns.com/foaf/0.1/'
+  xmlns:_5='http://purl.org/spar/fabio/'
+  xmlns:_4='http://schema.org/'
+  xmlns:_3='http://www.w3.org/ns/oa#'
+  xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+>
+  <_3:Annotation>
+    <_3:hasTarget>
+      <_3:SpecificResource>
+        <_3:hasSource rdf:resource="http://www.dlib.org/dlib/november14/beel/11beel.htmlbrook/11brook.html"/>
+        <_3:hasSelector rdf:nodeID="gphyRDZa5"/>
+      </_3:SpecificResource>
+    </_3:hasTarget>
+    <rdfs:label>Autore</rdfs:label>
+    <_3:annotatedAt>2015-06-23 14:06:06.782943</_3:annotatedAt>
+    <_3:hasBody>
+      <rdf:Statement>
+        <rdf:object rdf:resource="http://vitali.web.cs.unibo.it/raschietto/person/idauth"/>
+        <rdf:predicate rdf:resource="http://purl.org/dc/terms/creator"/>
+        <rdf:subject rdf:resource="http://www.dlib.org/dlib/november14/beel/11beel.htmlbrook/11brook"/>
+        <rdfs:label>un autore del documento e' s automatically granted c</rdfs:label>
+      </rdf:Statement>
+    </_3:hasBody>
+    <_3:annotatedBy>
+      <rdf:Description rdf:about="mailto:fgb@e.it">
+        <_6:name>trg</_6:name>
+        <_4:mail>fgb@e.it</_4:mail>
+      </rdf:Description>
+    </_3:annotatedBy>
+  </_3:Annotation>
+  <rdf:Description rdf:about="http://vitali.web.cs.unibo.it/raschietto/person/idauth">
+    <rdfs:label>s automatically granted c</rdfs:label>
+  </rdf:Description>
+  <_5:Expression rdf:about="http://www.dlib.org/dlib/november14/beel/11beel.htmlbrook/11brook_ver1">
+    <_5:hasRepresentation>
+      <_5:Item rdf:about="http://www.dlib.org/dlib/november14/beel/11beel.htmlbrook/11brook.html"/>
+    </_5:hasRepresentation>
+  </_5:Expression>
+  <_3:FragmentSelector rdf:nodeID="gphyRDZa5">
+    <_3:start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">133</_3:start>
+    <rdf:value>p12_td0_</rdf:value>
+    <_3:end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">158</_3:end>
+  </_3:FragmentSelector>
+  <_5:Work rdf:about="http://www.dlib.org/dlib/november14/beel/11beel.htmlbrook/11brook">
+    <_7:realization rdf:resource="http://www.dlib.org/dlib/november14/beel/11beel.htmlbrook/11brook_ver1"/>
+    <_5:hasPortrayal rdf:resource="http://www.dlib.org/dlib/november14/beel/11beel.htmlbrook/11brook.html"/>
+  </_5:Work>
+</rdf:RDF>

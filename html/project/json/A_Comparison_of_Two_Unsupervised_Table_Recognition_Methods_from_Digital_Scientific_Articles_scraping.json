@@ -1,0 +1,418 @@
+[
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "November/December 2014\nVolume 20, Number 11/12Table of Contents\n",
+                    "predicate": "webscraping:hasPublicationYear",
+                    "subject": "A_Comparison_of_Two_Unsupervised_Table_Recognition_Methods_from_Digital_Scientific_Articles"
+                },
+                "label": "",
+                "type": "hasPublicationYear"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "p-0",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:32:01.369194"
+        },
+        "target": {
+            "end": 64,
+            "id": "bo",
+            "source": "November/December 2014\nVolume 20, Number 11/12Table of Contents\n",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "\nStefan Klampfl \nKnow-Center GmbH, Graz, Austria\nsklampfl@know-center.at\n\nKris Jack \nMendeley Ltd., London, UK\nkris.jack@mendeley.com\n\nRoman Kern \nKnowledge Technologies Institute, Graz University of Technology, Graz, Austria\nrkern@tugraz.at\n\ndoi:10.1045/november14-klampfl\n ",
+                    "predicate": "dcterms:creator",
+                    "subject": "A_Comparison_of_Two_Unsupervised_Table_Recognition_Methods_from_Digital_Scientific_Articles"
+                },
+                "label": "",
+                "type": "hasAuthor"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "p-1",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:32:01.369194"
+        },
+        "target": {
+            "end": 275,
+            "id": "bo",
+            "source": "\nStefan Klampfl \nKnow-Center GmbH, Graz, Austria\nsklampfl@know-center.at\n\nKris Jack \nMendeley Ltd., London, UK\nkris.jack@mendeley.com\n\nRoman Kern \nKnowledge Technologies Institute, Graz University of Technology, Graz, Austria\nrkern@tugraz.at\n\ndoi:10.1045/november14-klampfl\n ",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "A Comparison of Two Unsupervised Table Recognition Methods from Digital Scientific Articles",
+                    "predicate": "dcterms:title",
+                    "subject": "A_Comparison_of_Two_Unsupervised_Table_Recognition_Methods_from_Digital_Scientific_Articles"
+                },
+                "label": "",
+                "type": "hasTitle"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-4",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:32:01.369194"
+        },
+        "target": {
+            "end": 91,
+            "id": "bo",
+            "source": "A Comparison of Two Unsupervised Table Recognition Methods from Digital Scientific Articles",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "Keywords: Table Recognition, Document Analysis, Unsupervised Learning, PDF Extraction, Text Mining",
+                    "predicate": "sem:denotes",
+                    "subject": "A_Comparison_of_Two_Unsupervised_Table_Recognition_Methods_from_Digital_Scientific_Articles"
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "p-4",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:32:01.369194"
+        },
+        "target": {
+            "end": 98,
+            "id": "bo",
+            "source": "Keywords: Table Recognition, Document Analysis, Unsupervised Learning, PDF Extraction, Text Mining",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-5",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:32:01.369194"
+        },
+        "target": {
+            "end": 8,
+            "id": "bo",
+            "source": "Abstract",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-6",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:32:01.369194"
+        },
+        "target": {
+            "end": 15,
+            "id": "bo",
+            "source": "1. Introduction",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-7",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:32:01.369194"
+        },
+        "target": {
+            "end": 15,
+            "id": "bo",
+            "source": "2. Related Work",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-8",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:32:01.369194"
+        },
+        "target": {
+            "end": 13,
+            "id": "bo",
+            "source": "3. Algorithms",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-9",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:32:01.369194"
+        },
+        "target": {
+            "end": 13,
+            "id": "bo",
+            "source": "4. Evaluation",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-10",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:32:01.369194"
+        },
+        "target": {
+            "end": 13,
+            "id": "bo",
+            "source": "5. Conclusion",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-11",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:32:01.369194"
+        },
+        "target": {
+            "end": 16,
+            "id": "bo",
+            "source": "Acknowledgements",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-12",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:32:01.369194"
+        },
+        "target": {
+            "end": 10,
+            "id": "bo",
+            "source": "References",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-13",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:32:01.369194"
+        },
+        "target": {
+            "end": 17,
+            "id": "bo",
+            "source": "About the Authors",
+            "start": 0
+        }
+    }
+]

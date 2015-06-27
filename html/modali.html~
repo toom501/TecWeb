@@ -1,0 +1,52 @@
+<ul class = "navbar">
+	<li> 
+		<a id = "btnHow" class="modal-trigger waves-effect waves-light btn" href="#modal1">How To</a>
+
+  
+  			<div id="modal1" class="modal modal-fixed-footer">
+    				<div class="modal-content">
+      					<h4>How To</h4>
+      					<p>A bunch of text</p>
+    				</div>
+    				<div class="modal-footer">
+      					<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+    				</div>
+  			</div>
+	</li>
+	<li>
+		<a id = "btnAbout" class="modal-trigger waves-effect waves-light btn" href="#modal2"> About </a>
+		
+			<div id="modal2" class="modal modal-fixed-footer">
+    				<div class="modal-content">
+      					<h4>About</h4>
+      					<p>A bunch of text</p>
+    				</div>
+    				<div class="modal-footer">
+      					<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+    				</div>
+  			</div>
+	</li>
+	<li>
+		<a id = "btnLogin" class="modal-trigger waves-effect waves-light btn" href="#modal3"> Login </a>
+		
+			<div id="modal3" class="modal modal-fixed-footer">
+    				<div class="modal-content">
+      					<h1>About</h1>
+      					<form name = "login" action = "submit "method="get" accept-charset="utf-8">
+        					<p> Email: <input type="email" name="username" placeholder="Email goes  here!" required></p>
+        					<p> Password :<input type="password" name="password" value="" placeholder="Password goes here!" required></p>
+
+        					<p class="submit"><input type="submit" name="commit" value="Login"></p>
+      					</form>
+
+  			</div>
+	</li>
+</ul>
+
+
+
+
+
+
+
+

@@ -1,0 +1,482 @@
+[
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "November/December 2014\nVolume 20, Number 11/12Table of Contents\n",
+                    "predicate": "webscraping:hasPublicationYear",
+                    "subject": "The_Social_Political_and_Legal_Aspects_of_Text_and_Data_Mining_(TDM)"
+                },
+                "label": "",
+                "type": "hasPublicationYear"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "p-0",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:23:45.878152"
+        },
+        "target": {
+            "end": 64,
+            "id": "bo",
+            "source": "November/December 2014\nVolume 20, Number 11/12Table of Contents\n",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "\n\nMichelle Brook \nThe Content Mine\nmichelle@contentmine.org\n\nPeter Murray-Rust \nUniversity of Cambridge\npm286@cam.ac.uk\n\nCharles Oppenheim \nCity, Northampton and Robert Gordon Universities\nc.oppenheim@btinternet.com\n\ndoi:10.1045/november14-brook\n ",
+                    "predicate": "dcterms:creator",
+                    "subject": "The_Social_Political_and_Legal_Aspects_of_Text_and_Data_Mining_(TDM)"
+                },
+                "label": "",
+                "type": "hasAuthor"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "p-1",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:23:45.878152"
+        },
+        "target": {
+            "end": 247,
+            "id": "bo",
+            "source": "\n\nMichelle Brook \nThe Content Mine\nmichelle@contentmine.org\n\nPeter Murray-Rust \nUniversity of Cambridge\npm286@cam.ac.uk\n\nCharles Oppenheim \nCity, Northampton and Robert Gordon Universities\nc.oppenheim@btinternet.com\n\ndoi:10.1045/november14-brook\n ",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "The Social, Political and Legal Aspects of Text and Data Mining (TDM)",
+                    "predicate": "dcterms:title",
+                    "subject": "The_Social_Political_and_Legal_Aspects_of_Text_and_Data_Mining_(TDM)"
+                },
+                "label": "",
+                "type": "hasTitle"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-4",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:23:45.878152"
+        },
+        "target": {
+            "end": 69,
+            "id": "bo",
+            "source": "The Social, Political and Legal Aspects of Text and Data Mining (TDM)",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-5",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:23:45.878152"
+        },
+        "target": {
+            "end": 8,
+            "id": "bo",
+            "source": "Abstract",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-6",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:23:45.878152"
+        },
+        "target": {
+            "end": 15,
+            "id": "bo",
+            "source": "1. Introduction",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-7",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:23:45.878152"
+        },
+        "target": {
+            "end": 46,
+            "id": "bo",
+            "source": "2. Copyright, database right, licences and TDM",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-8",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:23:45.878152"
+        },
+        "target": {
+            "end": 27,
+            "id": "bo",
+            "source": "3. Recent changes to UK law",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-9",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:23:45.878152"
+        },
+        "target": {
+            "end": 46,
+            "id": "bo",
+            "source": "4. What can politicians and policy makers do? ",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-10",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:23:45.878152"
+        },
+        "target": {
+            "end": 52,
+            "id": "bo",
+            "source": "5. Publishers are not embracing opportunities of TDM",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-11",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:23:45.878152"
+        },
+        "target": {
+            "end": 43,
+            "id": "bo",
+            "source": "6. How can publishers help TDM researchers?",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-12",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:23:45.878152"
+        },
+        "target": {
+            "end": 53,
+            "id": "bo",
+            "source": "7. Awareness among academics and a technological gap ",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-13",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:23:45.878152"
+        },
+        "target": {
+            "end": 13,
+            "id": "bo",
+            "source": "8. Conclusion",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-14",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:23:45.878152"
+        },
+        "target": {
+            "end": 5,
+            "id": "bo",
+            "source": "Notes",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-15",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:23:45.878152"
+        },
+        "target": {
+            "end": 10,
+            "id": "bo",
+            "source": "References",
+            "start": 0
+        }
+    },
+    {
+        "annotations": [
+            {
+                "body": {
+                    "literal": "",
+                    "predicate": "",
+                    "subject": ""
+                },
+                "label": "",
+                "type": "denotesRhetoric"
+            }
+        ],
+        "dati": {
+            "id": "",
+            "idDad": "h3-16",
+            "pos": 0,
+            "widget": ""
+        },
+        "provenance": {
+            "author": {
+                "email": "webscraping@lela.it",
+                "name": "webscraping"
+            },
+            "time": "2015-06-11 16:23:45.878152"
+        },
+        "target": {
+            "end": 17,
+            "id": "bo",
+            "source": "About the Authors",
+            "start": 0
+        }
+    }
+]

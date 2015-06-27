@@ -1,0 +1,516 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+from lxml import html,etree
+import httplib
+import re
+import json
+import sys
+import datetime
+import rdflib
+from rdflib import Namespace
+from rdflib import Literal
+from rdflib import BNode
+from rdflib import URIRef
+import os
+import stat
+
+RASCH = Namespace("http://vitali.web.cs.unibo.it/raschietto/person/")
+DCTERMS = Namespace("http://purl.org/dc/terms/")
+FABIO = Namespace("http://purl.org/spar/fabio/")
+FOAF = Namespace("http://xmlns.com/foaf/0.1/")
+FRBR = Namespace("http://purl.org/vocab/frbr/core#")
+OA = Namespace("http://www.w3.org/ns/oa#")
+RDF = Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
+RDFS = Namespace("http://www.w3.org/2000/01/rdf-schema#")
+SCHEMA = Namespace("http://schema.org/")
+PRISM = Namespace("http://prismstandard.org/namespaces/basic/2.0/")
+SEM = Namespace("http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#")
+CITO = Namespace("http://purl.org/spar/cito/")
+DEO = Namespace("http://vitali.web.cs.unibo.it/raschietto/deo/")
+SRO = Namespace("http://vitali.web.cs.unibo.it/raschietto/sro/")
+XSD = Namespace("http://www.w3.org/2001/XMLSchema#")
+SKOS = Namespace("http://www.w3.org/2004/02/skos/core#")
+DEOLESS = Namespace("http://vitali.web.cs.unibo.it/raschietto/")
+###################################################################### switch case 
+class switch(object):
+    def __init__(self, value):
+        self.value = value
+        self.fall = False
+
+    def __iter__(self):
+        """Return the match method once, then stop"""
+        yield self.match
+        raise StopIteration
+    
+    def match(self, *args):
+        """Indicate whether or not to enter a case suite"""
+        if self.fall or not args:
+            return True
+        elif self.value in args:
+            self.fall = True
+            return True
+        else:
+            return False
+########################################################################
+
+rdf = rdflib.Graph()
+
+
+def creaAnnotAutore(articolo, valore, start, end, authorName, creatorName, creatorMail):
+	annotation = BNode()
+	target = BNode()
+	selector = BNode()
+	author = BNode()
+	#url= ""
+	#valore = "id"
+	#start = 0
+	#end = len(authorString)
+	time = str(datetime.datetime.now())
+	idauth = "idauth"
+	res = re.sub('.html', '',articolo) 
+	exp = res+"_ver1"
+	
+	rdf.add((annotation, RDF.type, OA.Annotation))
+	rdf.add((annotation, RDFS.label, Literal("Autore")))
+	rdf.add((annotation, OA.hasTarget, target))
+	rdf.add((target, RDF.type, OA.SpecificResource))
+	rdf.add((target, OA.hasSource, SITE[articolo]))
+	rdf.add((target, OA.hasSelector, selector))
+	rdf.add((selector, RDF.type, OA.FragmentSelector))
+	rdf.add((selector, RDF.value, Literal(valore)))
+	rdf.add((selector, OA.start, Literal(start, datatype=XSD.nonNegativeInteger)))
+	rdf.add((selector, OA.end, Literal(end, datatype=XSD.nonNegativeInteger)))
+	rdf.add((annotation, OA.hasBody, author))
+	rdf.add((annotation, OA.annotatedBy, URIRef("mailto:"+creatorMail)))
+	rdf.add((annotation, OA.annotatedAt, Literal(time)))
+	rdf.add((author, RDF.type, RDF.Statement))
+	rdf.add((author, RDF.subject, SITE[res]))              #
+	rdf.add((author, RDF.predicate, DCTERMS.creator))
+	rdf.add((author, RDF.object, RASCH[idauth]))
+	rdf.add((author, RDFS.label, Literal("un autore del documento e' "+authorName)))
+	rdf.add((SITE[res], RDF.type, FABIO.Work))		#
+	rdf.add((SITE[res], FABIO.hasPortrayal, SITE[articolo])) #
+	rdf.add((SITE[res], FRBR.realization, SITE[exp]))        #
+	rdf.add((RASCH[idauth], RDFS.label, Literal(authorName)))
+	rdf.add((URIRef("mailto:"+creatorMail), FOAF.name, Literal(creatorName)))
+	rdf.add((URIRef("mailto:"+creatorMail), SCHEMA.mail, Literal(creatorMail)))
+	
+	rdf.add((SITE[exp], RDF.type, FABIO.Expression))		#
+	rdf.add((SITE[exp], FABIO.hasRepresentation, SITE[articolo]))	#
+	rdf.add((SITE[articolo], RDF.type, FABIO.Item))			#
+
+def creaAnnotDate(articolo, valore, start, end, dateSelection, creatorName, creatorMail):
+	annotation = BNode()
+	target = BNode()
+	selector = BNode()
+	date = BNode()
+	time = str(datetime.datetime.now())
+	res = re.sub('.html', '',articolo)
+	exp = res+"_ver1"
+	
+	rdf.add((annotation, RDF.type, OA.Annotation))
+	rdf.add((annotation, RDFS.label, Literal("Data")))
+	rdf.add((annotation, OA.hasTarget, target))
+	rdf.add((target, RDF.type, OA.SpecificResource))
+	rdf.add((target, OA.hasSource, SITE[articolo]))
+	rdf.add((target, OA.hasSelector, selector))
+	rdf.add((selector, RDF.type, OA.FragmentSelector))
+	rdf.add((selector, RDF.value, Literal(valore)))
+	rdf.add((selector, OA.start, Literal(start, datatype=XSD.nonNegativeInteger)))
+	rdf.add((selector, OA.end, Literal(end, datatype=XSD.nonNegativeInteger)))
+	rdf.add((annotation, OA.hasBody, date))
+	rdf.add((annotation, OA.annotatedBy, URIRef("mailto:"+creatorMail)))
+	rdf.add((annotation, OA.annotatedAt, Literal(time)))
+	rdf.add((date, RDF.type, RDF.Statement))
+	rdf.add((date, RDF.subject, SITE[exp]))
+	rdf.add((date, RDF.predicate, FABIO.hasPublicationYear))
+	rdf.add((date, RDF.object, Literal(dateSelection, datatype=XSD.date)))
+	rdf.add((URIRef("mailto:"+creatorMail), FOAF.name, Literal(creatorName)))
+	rdf.add((URIRef("mailto:"+creatorMail), SCHEMA.mail, Literal(creatorMail)))
+	
+	rdf.add((SITE[res], RDF.type, FABIO.Work))		#
+	rdf.add((SITE[res], FABIO.hasPortrayal, SITE[articolo])) #
+	rdf.add((SITE[res], FRBR.realization, SITE[exp]))        #
+	rdf.add((SITE[exp], RDF.type, FABIO.Expression))		#
+	rdf.add((SITE[exp], FABIO.hasRepresentation, SITE[articolo]))	#
+	rdf.add((SITE[articolo], RDF.type, FABIO.Item))			#
+	
+def creaAnnotTitle(articolo, valore, start, end, titleSelection, creatorName, creatorMail):
+	annotation = BNode()
+	target = BNode()
+	selector = BNode()
+	title = BNode()
+	time = str(datetime.datetime.now())
+	res = re.sub('.html', '',articolo)
+	exp = res+"_ver1"
+	
+	rdf.add((annotation, RDF.type, OA.Annotation))
+	rdf.add((annotation, RDFS.label, Literal("Titolo")))
+	rdf.add((annotation, OA.hasTarget, target))
+	rdf.add((target, RDF.type, OA.SpecificResource))
+	rdf.add((target, OA.hasSource, SITE[articolo]))
+	rdf.add((target, OA.hasSelector, selector))
+	rdf.add((selector, RDF.type, OA.FragmentSelector))
+	rdf.add((selector, RDF.value, Literal(valore)))
+	rdf.add((selector, OA.start, Literal(start, datatype=XSD.nonNegativeInteger)))
+	rdf.add((selector, OA.end, Literal(end, datatype=XSD.nonNegativeInteger)))
+	rdf.add((annotation, OA.hasBody, title))
+	rdf.add((annotation, OA.annotatedBy, URIRef("mailto:"+creatorMail)))
+	rdf.add((annotation, OA.annotatedAt, Literal(time)))
+	rdf.add((title, RDF.type, RDF.Statement))
+	rdf.add((title, RDF.subject, SITE[exp]))
+	rdf.add((title, RDF.predicate, DCTERMS.title))
+	rdf.add((title, RDF.object, Literal(titleSelection, datatype=XSD.string)))
+	rdf.add((URIRef("mailto:"+creatorMail), FOAF.name, Literal(creatorName)))
+	rdf.add((URIRef("mailto:"+creatorMail), SCHEMA.mail, Literal(creatorMail)))
+	
+	rdf.add((SITE[res], RDF.type, FABIO.Work))		#
+	rdf.add((SITE[res], FABIO.hasPortrayal, SITE[articolo])) #
+	rdf.add((SITE[res], FRBR.realization, SITE[exp]))        #
+	rdf.add((SITE[exp], RDF.type, FABIO.Expression))		#
+	rdf.add((SITE[exp], FABIO.hasRepresentation, SITE[articolo]))	#
+	rdf.add((SITE[articolo], RDF.type, FABIO.Item))			#
+
+def creaAnnotDOI(articolo, valore, start, end, doiSelection, creatorName, creatorMail):
+	annotation = BNode()
+	target = BNode()
+	selector = BNode()
+	doi = BNode()
+	time = str(datetime.datetime.now())
+	res = re.sub('.html', '',articolo)
+	exp = res+"_ver1"
+	
+	rdf.add((annotation, RDF.type, OA.Annotation))
+	rdf.add((annotation, RDFS.label, Literal("DOI")))
+	rdf.add((annotation, OA.hasTarget, target))
+	rdf.add((target, RDF.type, OA.SpecificResource))
+	rdf.add((target, OA.hasSource, SITE[articolo]))
+	rdf.add((target, OA.hasSelector, selector))
+	rdf.add((selector, RDF.type, OA.FragmentSelector))
+	rdf.add((selector, RDF.value, Literal(valore)))
+	rdf.add((selector, OA.start, Literal(start, datatype=XSD.nonNegativeInteger)))
+	rdf.add((selector, OA.end, Literal(end, datatype=XSD.nonNegativeInteger)))
+	rdf.add((annotation, OA.hasBody, doi))
+	rdf.add((annotation, OA.annotatedBy, URIRef("mailto:"+creatorMail)))
+	rdf.add((annotation, OA.annotatedAt, Literal(time)))
+	rdf.add((doi, RDF.type, RDF.Statement))
+	rdf.add((doi, RDF.subject, SITE[exp]))
+	rdf.add((doi, RDF.predicate, PRISM.doi))
+	rdf.add((doi, RDF.object, Literal(doiSelection, datatype=XSD.string)))
+	rdf.add((URIRef("mailto:"+creatorMail), FOAF.name, Literal(creatorName)))
+	rdf.add((URIRef("mailto:"+creatorMail), SCHEMA.mail, Literal(creatorMail)))
+	
+	rdf.add((SITE[res], RDF.type, FABIO.Work))		#
+	rdf.add((SITE[res], FABIO.hasPortrayal, SITE[articolo])) #
+	rdf.add((SITE[res], FRBR.realization, SITE[exp]))        #
+	rdf.add((SITE[exp], RDF.type, FABIO.Expression))		#
+	rdf.add((SITE[exp], FABIO.hasRepresentation, SITE[articolo]))	#
+	rdf.add((SITE[articolo], RDF.type, FABIO.Item))			#
+	
+def creaAnnotURL(articolo, valore, start, end, URLSelection, creatorName, creatorMail):
+	annotation = BNode()
+	target = BNode()
+	selector = BNode()
+	url = BNode()
+	time = str(datetime.datetime.now())
+	res = re.sub('.html', '',articolo)
+	exp = res+"_ver1"
+	
+	rdf.add((annotation, RDF.type, OA.Annotation))
+	rdf.add((annotation, RDFS.label, Literal("URL")))
+	rdf.add((annotation, OA.hasTarget, target))
+	rdf.add((target, RDF.type, OA.SpecificResource))
+	rdf.add((target, OA.hasSource, SITE[articolo]))
+	rdf.add((target, OA.hasSelector, selector))
+	rdf.add((selector, RDF.type, OA.FragmentSelector))
+	rdf.add((selector, RDF.value, Literal(valore)))
+	rdf.add((selector, OA.start, Literal(start, datatype=XSD.nonNegativeInteger)))
+	rdf.add((selector, OA.end, Literal(end, datatype=XSD.nonNegativeInteger)))
+	rdf.add((annotation, OA.hasBody, url))
+	rdf.add((annotation, OA.annotatedBy, URIRef("mailto:"+creatorMail)))
+	rdf.add((annotation, OA.annotatedAt, Literal(time)))
+	rdf.add((url, RDF.type, RDF.Statement))
+	rdf.add((url, RDF.subject, SITE[exp]))
+	rdf.add((url, RDF.predicate, FABIO.hasURL))
+	rdf.add((url, RDF.object, Literal(URLSelection, datatype=XSD.anyURI)))
+	rdf.add((URIRef("mailto:"+creatorMail), FOAF.name, Literal(creatorName)))
+	rdf.add((URIRef("mailto:"+creatorMail), SCHEMA.mail, Literal(creatorMail)))
+	
+	rdf.add((SITE[res], RDF.type, FABIO.Work))		#
+	rdf.add((SITE[res], FABIO.hasPortrayal, SITE[articolo])) #
+	rdf.add((SITE[res], FRBR.realization, SITE[exp]))        #
+	rdf.add((SITE[exp], RDF.type, FABIO.Expression))		#
+	rdf.add((SITE[exp], FABIO.hasRepresentation, SITE[articolo]))	#
+	rdf.add((SITE[articolo], RDF.type, FABIO.Item))			#
+	
+def creaAnnotRhetoric(articolo, valore, start, end, rhetoricSelection, creatorName, creatorMail):   #aggiungere variabile rhetoric che indica il tipo di selezione: introduction,abstract,conclusion....
+	annotation = BNode()
+	target = BNode()
+	selector = BNode()
+	rhetoric = BNode() #variabile
+	time = str(datetime.datetime.now())
+	res = re.sub('.html', '',articolo)
+	exp = res+"_ver1"
+	sel = articolo+"#"+valore+"-"+str(start)+"-"+str(end)
+	
+	rdf.add((annotation, RDF.type, OA.Annotation))
+	rdf.add((annotation, RDFS.label, Literal("Retorica")))
+	rdf.add((annotation, OA.hasTarget, target))
+	rdf.add((target, RDF.type, OA.SpecificResource))
+	rdf.add((target, OA.hasSource, SITE[articolo]))
+	rdf.add((target, OA.hasSelector, selector))
+	rdf.add((selector, RDF.type, OA.FragmentSelector))
+	rdf.add((selector, RDF.value, Literal(valore)))
+	rdf.add((selector, OA.start, Literal(start, datatype=XSD.nonNegativeInteger)))
+	rdf.add((selector, OA.end, Literal(end, datatype=XSD.nonNegativeInteger)))
+	rdf.add((annotation, OA.hasBody, rhetoric))
+	rdf.add((annotation, OA.annotatedBy, URIRef("mailto:"+creatorMail)))
+	rdf.add((annotation, OA.annotatedAt, Literal(time)))
+	rdf.add((rhetoric, RDF.type, RDF.Statement))
+	rdf.add((rhetoric, RDF.subject, SITE[sel]))    #parametro?
+	rdf.add((rhetoric, RDF.predicate, SEM.denotes))
+	rdf.add((rhetoric, RDF.object, Literal("deo:Introduction")))			#deo namespace? Introduction variabile?
+	rdf.add((rhetoric, RDFS.label, Literal(rhetoric)))
+	rdf.add((URIRef("mailto:"+creatorMail), FOAF.name, Literal(creatorName)))
+	rdf.add((URIRef("mailto:"+creatorMail), SCHEMA.mail, Literal(creatorMail)))
+	
+	rdf.add((SITE[res], RDF.type, FABIO.Work))		#
+	rdf.add((SITE[res], FABIO.hasPortrayal, SITE[articolo])) #
+	rdf.add((SITE[res], FRBR.realization, SITE[exp]))        #
+	rdf.add((SITE[exp], RDF.type, FABIO.Expression))		#
+	rdf.add((SITE[exp], FABIO.hasRepresentation, SITE[articolo]))	#
+	rdf.add((SITE[articolo], RDF.type, FABIO.Item))			#
+	
+def creaAnnotComment(articolo, valore, start, end, commentSelection, creatorName, creatorMail):		#mettere aposto
+	annotation = BNode()
+	target = BNode()
+	selector = BNode()
+	comment = BNode()
+	time = str(datetime.datetime.now())
+	res = re.sub('.html', '',articolo)
+	exp = res+"_ver1"
+	sel = articolo+"#"+valore+"-"+str(start)+"-"+str(end)
+	
+	rdf.add((annotation, RDF.type, OA.Annotation))
+	rdf.add((annotation, RDFS.label, Literal("Commento")))
+	rdf.add((annotation, OA.hasTarget, target))
+	rdf.add((target, RDF.type, OA.SpecificResource))
+	rdf.add((target, OA.hasSource, SITE[articolo]))
+	rdf.add((target, OA.hasSelector, selector))
+	rdf.add((selector, RDF.type, OA.FragmentSelector))
+	rdf.add((selector, RDF.value, Literal(valore)))
+	rdf.add((selector, OA.start, Literal(start, datatype=XSD.nonNegativeInteger)))
+	rdf.add((selector, OA.end, Literal(end, datatype=XSD.nonNegativeInteger)))
+	rdf.add((annotation, OA.hasBody, comment))
+	rdf.add((annotation, OA.annotatedBy, URIRef("mailto:"+creatorMail)))
+	rdf.add((annotation, OA.annotatedAt, Literal(time)))
+	rdf.add((comment, RDF.type, RDF.Statement))
+	rdf.add((comment, RDF.subject, SITE[sel]))    #parametro?
+	rdf.add((comment, RDF.predicate, SCHEMA.comment))
+	rdf.add((comment, RDF.object, Literal(commentSelection, datatype=XSD.string)))
+	#rdf.add((comment, RDFS.label, Literal("Commento")))
+	rdf.add((URIRef("mailto:"+creatorMail), FOAF.name, Literal(creatorName)))
+	rdf.add((URIRef("mailto:"+creatorMail), SCHEMA.mail, Literal(creatorMail)))
+	
+	rdf.add((SITE[res], RDF.type, FABIO.Work))		#
+	rdf.add((SITE[res], FABIO.hasPortrayal, SITE[articolo])) #
+	rdf.add((SITE[res], FRBR.realization, SITE[exp]))        #
+	rdf.add((SITE[exp], RDF.type, FABIO.Expression))		#
+	rdf.add((SITE[exp], FABIO.hasRepresentation, SITE[articolo]))	#
+	rdf.add((SITE[articolo], RDF.type, FABIO.Item))			#
+	
+def creaAnnotCites(articolo, valore, start, end, citeSelection, creatorName, creatorMail):   #mettere aposto
+	annotation = BNode()
+	target = BNode()
+	selector = BNode()
+	cite = BNode() #variabile
+	time = str(datetime.datetime.now())
+	res = re.sub('.html', '',articolo)
+	exp = res+"_ver1"
+	sel = articolo+"#"+valore+"-"+str(start)+"-"+str(end)
+	cit = exp+"_cited3"
+	titolo = "titolo articolo" #parametro
+	
+	rdf.add((annotation, RDF.type, OA.Annotation))
+	rdf.add((annotation, RDFS.label, Literal("Citazione")))
+	rdf.add((annotation, OA.hasTarget, target))
+	rdf.add((target, RDF.type, OA.SpecificResource))
+	rdf.add((target, OA.hasSource, SITE[articolo]))
+	rdf.add((target, OA.hasSelector, selector))
+	rdf.add((selector, RDF.type, OA.FragmentSelector))
+	rdf.add((selector, RDF.value, Literal(valore)))
+	rdf.add((selector, OA.start, Literal(start, datatype=XSD.nonNegativeInteger)))
+	rdf.add((selector, OA.end, Literal(end, datatype=XSD.nonNegativeInteger)))
+	rdf.add((annotation, OA.hasBody, cite))
+	rdf.add((annotation, OA.annotatedBy, URIRef("mailto:"+creatorMail)))
+	rdf.add((annotation, OA.annotatedAt, Literal(time)))
+	rdf.add((cite, RDF.type, RDF.Statement))
+	rdf.add((cite, RDF.subject, SITE[exp]))    #parametro?
+	rdf.add((cite, RDF.predicate, CITO.cites))
+	rdf.add((cite, RDF.object, SITE[cit]))     #?
+	rdf.add((cite, RDFS.label, Literal("questo articolo cita '"+titolo+"'")))
+	rdf.add((URIRef("mailto:"+creatorMail), FOAF.name, Literal(creatorName)))
+	rdf.add((URIRef("mailto:"+creatorMail), SCHEMA.mail, Literal(creatorMail)))
+	rdf.add((SITE[cit], RDFS.label, Literal(citeSelection)))
+	
+	rdf.add((SITE[res], RDF.type, FABIO.Work))		#
+	rdf.add((SITE[res], FABIO.hasPortrayal, SITE[articolo])) #
+	rdf.add((SITE[res], FRBR.realization, SITE[exp]))        #
+	rdf.add((SITE[exp], RDF.type, FABIO.Expression))		#
+	rdf.add((SITE[exp], FABIO.hasRepresentation, SITE[articolo]))	#
+	rdf.add((SITE[articolo], RDF.type, FABIO.Item))			#
+
+##################################################################################################
+aList = []
+cList = []
+url = []
+url = json.load(sys.stdin)			# 2 stringhe: domain e path
+httpdomain = url[0]
+domain = re.sub('http://www.', '',httpdomain)
+path = url[1]
+conn = httplib.HTTPConnection(domain)										
+conn.request("GET",path)
+res = conn.getresponse()
+body = res.read()
+
+my_page = html.fromstring(body)
+
+
+SITE = Namespace(httpdomain+path)
+##################################################################################################
+articolo = "articolo.html"
+valore = "id"
+start = 0
+end = 123
+creatorName = "webscraping"
+creatorMail = "webscraping@unibo.it"
+for case in switch(domain):
+    	if case('dlib.org'):
+	    	try:
+			dateSelection = my_page.xpath("//p[@class='blue'][1]")[0].text_content().encode("utf8")
+
+			creaAnnotDate(articolo, valore, start, end, dateSelection, creatorName, creatorMail)
+		except IndexError:
+			pass
+		for i in range(0,99):
+			try:
+				authors = my_page.xpath("//p[@class='blue'][2]/text()")[i].encode("utf8").strip()
+				creaAnnotAutore(articolo, valore, start, end, authors, creatorName, creatorMail)	#
+				aList += [authors]
+			except IndexError:
+				break
+		doi = aList[-1]
+		doiSelection = re.sub('doi:','',doi)
+		creaAnnotDOI(articolo, valore, start, end, doiSelection, creatorName, creatorMail)
+		
+		try:
+			titleSelection = my_page.xpath("//td/h3[2]/text()")[0].encode("utf8").strip()
+			creaAnnotTitle(articolo, valore, start, end, titleSelection, creatorName, creatorMail)
+		except IndexError:
+			pass
+		try:
+			keywordsSelection = my_page.xpath("//p[@class='blue'][5]/text()")[0].encode("utf8").strip()
+		except IndexError:
+			pass
+		else:	
+			if keywordsSelection.startswith("Keywords:") :
+				creaAnnotRhetoric(articolo, valore, start, end, keywordsSelection, creatorName, creatorMail)
+		for h3 in my_page.xpath("//table[1]//td[2]//h3[@class!='blue-space'] | //table[1]//td[2]//h3[not(@*)]"):
+			sectionSelection = h3.xpath("self::h3/text()")[0].encode("utf8").strip()
+			creaAnnotRhetoric(articolo, valore, start, end, sectionSelection, creatorName, creatorMail)
+	
+		urlSelection = "http://"+domain+path
+		creaAnnotURL(articolo, valore, start, end, urlSelection, creatorName, creatorMail)
+		try:
+			footerSelection = my_page.xpath("//p[@class='footer']/text()")[0].encode("utf8").strip()
+			creaAnnotComment(articolo, valore, start, end, footerSelection, creatorName, creatorMail)
+		except IndexError:
+			pass
+		try:
+			magazineSelection = my_page.xpath("//h3[@class='blue-space']/text()")[0].encode("utf8").strip()
+			creaAnnotComment(articolo, valore, start, end, magazineSelection, creatorName, creatorMail)
+		except IndexError:
+			pass
+		for i in range(0,99):
+			try:
+				citationSelection = my_page.xpath("//h3[last()-1]/following-sibling::p")[i].text_content().encode("utf8").strip()
+				creaAnnotCites(articolo, valore, start, end, citationSelection, creatorName, creatorMail)
+				cList += [citationSelection]
+		
+			except IndexError:
+				break
+		break
+
+    	if case(): # default 
+	    	# da usare per domain esterni e articoli con domain unibo.it?
+		if ".unibo.it" in domain:
+			try:
+				dateSelection = my_page.xpath("//*[@id='breadcrumb']/a[2]/text()")[0].encode("utf8").strip()
+				creaAnnotDate(articolo, valore, start, end, dateSelection, creatorName, creatorMail)
+			except IndexError:
+				pass
+			try:
+				authors = my_page.xpath("//*[@id='authorString']/em/text()")[0].encode("utf8").strip()
+				# statistica: autori divisi da virgola
+				creaAnnotAutore(articolo, valore, start, end, authorName, creatorName, creatorMail)
+			except IndexError:
+				pass
+			try:
+				titleSelection = my_page.xpath("//*[@id='articleTitle']/h3/text()")[0].encode("utf8").strip()
+				creaAnnotTitle(articolo, valore, start, end, titleSelection, creatorName, creatorMail)
+			except IndexError:
+				pass
+			try:
+				keywordsSelection = my_page.xpath("//*[@id='articleSubject']/div/text()")[0].encode("utf8").strip()
+				creaAnnotRhetoric(articolo, valore, start, end, keywordsSelection, creatorName, creatorMail)
+			except IndexError:
+				pass
+			try:
+				doiSelection = my_page.xpath("//a[@id='pub-id::doi']/text()")[0].encode("utf8").strip()
+				creaAnnotDOI(articolo, valore, start, end, doiSelection, creatorName, creatorMail)
+			except IndexError:
+				pass
+			urlSelection = "http://"+domain+path
+			creaAnnotURL(articolo, valore, start, end, URLSelection, creatorName, creatorMail)
+			for i in range(0,99):
+				try:
+					citationSelection = my_page.xpath("//div[@id='articleCitations']/div/p/text()")[i].encode("utf8").strip()
+					creaAnnotCites(articolo, valore, start, end, citationSelection, creatorName, creatorMail)
+					cList += [citation]
+				except IndexError:
+					break
+			try:
+				abstractSelection = my_page.xpath("//*[@id='articleAbstract']/h4/text()")[0].encode("utf8").strip()
+				creaAnnotRhetoric(articolo, valore, start, end, abstractSelection, creatorName, creatorMail)
+			except IndexError:
+				pass
+			try:
+				commentSelection = my_page.xpath("//a[@class='file']/text()")[0].encode("utf8").strip()	# "link al pdf contenente l'articolo completo"
+				creaAnnotComment(articolo, valore, start, end, commentSelection, creatorName, creatorMail)
+			except IndexError:
+				pass
+		else:
+			# fare qualche scraping
+			try:
+				commentSelection = my_page.xpath("//p/text()")[0].encode("utf8").strip()
+				creaAnnotComment(articolo, valore, start, end, commentSelection, creatorName, creatorMail)
+			except IndexError:
+				pass
+			try:
+				commentSelection = my_page.xpath("//a/text()")[0].encode("utf8").strip()
+				creaAnnotComment(articolo, valore, start, end, commentSelection, creatorName, creatorMail)
+			except IndexError:
+				pass
+			try:
+				commentSelection = my_page.xpath("//h3/text()")[0].encode("utf8").strip()
+				creaAnnotComment(articolo, valore, start, end, commentSelection, creatorName, creatorMail)
+			except IndexError:
+				pass
+
+		# No need to break here, it'll stop anyway	
+
+# mettere aposto i parametri delle funzioni
+rdf.serialize("graphScraping.owl", format="pretty-xml")
+os.chmod("graphScraping.owl", 0777)
+
+print 
